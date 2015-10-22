@@ -23,6 +23,9 @@ rpm -qf filename/folder
 # remove local rpm with filter
 rpm -e `rpm -qa | grep saas*`
 
+# remove package without executing uninstall scripts (avoid script errors)
+rpm -e --noscripts td-agent
+
 rpm -qf /usr/sbin/httpd # 查檔案是屬於那個 package
 rpm -ql httpd.rpm # 查 rpm 安裝的路徑
 
