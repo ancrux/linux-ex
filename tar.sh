@@ -9,3 +9,6 @@ tar -ztvf file.tar.gz
 # Task: List the contents of a tar.bz2 file
 tar -jtvf file.tar.bz2
 
+# tar with multiple source
+tar $option file.tar $source_dir1 $source_file2 $source_dir3
+
