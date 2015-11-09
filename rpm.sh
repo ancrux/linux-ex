@@ -29,3 +29,7 @@ rpm -e --noscripts td-agent
 rpm -qf /usr/sbin/httpd # 查檔案是屬於那個 package
 rpm -ql httpd.rpm # 查 rpm 安裝的路徑
 
+
+# list rpm by package name only, use the "--qf" option to format the results as you want them.
+rpm -qa --qf "%{NAME}\n"
+
