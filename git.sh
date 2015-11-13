@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# delete remote branch
+git push origin --delete <branchName> # as of git v1.7
+git push origin :<branchName> # as of git v1.5
+
+# delete local branch
+git branch -D <branchname>
+
 # sync git repos
 basedir=`pwd`
 echo basedir=$basedir
