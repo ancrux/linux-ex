@@ -1,0 +1,6 @@
+[myrepo]
+name=My Repo
+baseurl=http://172.16.33.88/repo
+enabled=1
+gpgcheck=0
+
