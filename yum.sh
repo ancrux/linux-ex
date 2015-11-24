@@ -9,3 +9,8 @@ yumdownloader <package> || yum install yum-downloadonly && yum update <package> 
 # search a package with filename
 yum provides "*/scp"
 yum provides httpd
+
+# daemon for increasing yum performance
+yum install yum-cron
+service yum-cron restart
+
