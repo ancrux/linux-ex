@@ -14,3 +14,6 @@ yum provides httpd
 yum install yum-cron
 service yum-cron restart
 
+# command for increasing yum performance
+yum makecache fast
+
