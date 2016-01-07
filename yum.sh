@@ -6,6 +6,9 @@ yum -y update # right after ISO installation
 # yumdownloader
 yumdownloader <package> || yum install yum-downloadonly && yum update <package> -y --downloadonly --downloaddir=/opt
 
+# yumdownloader along with dependencies
+yumdownloader --resolve <package>
+
 # search a package with filename
 yum provides "*/scp"
 yum provides httpd
