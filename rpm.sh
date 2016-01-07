@@ -33,3 +33,6 @@ rpm -ql httpd.rpm # 查 rpm 安裝的路徑
 # list rpm by package name only, use the "--qf" option to format the results as you want them.
 rpm -qa --qf "%{NAME}\n"
 
+# remove package without dependencies
+rpm -e --nodeps <package>
+
